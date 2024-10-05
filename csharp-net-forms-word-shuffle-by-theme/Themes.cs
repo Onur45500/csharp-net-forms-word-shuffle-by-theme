@@ -2,9 +2,15 @@ namespace csharp_net_forms_word_shuffle_by_theme
 {
     public partial class Themes : Form
     {
+        int i = 0;
+        int guessed = 0;
+        string newText;
+        List<string> words = new List<string>();
+
         public Themes()
         {
             InitializeComponent();
+            KeyPreview = true;
         }
 
         private void Animals_Click(object sender, EventArgs e)

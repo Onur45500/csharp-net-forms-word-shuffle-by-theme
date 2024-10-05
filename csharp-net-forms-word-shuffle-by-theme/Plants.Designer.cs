@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             Title = new Label();
+            lblGuessed = new Label();
+            lblCounter = new Label();
+            lblWord = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // Title
@@ -41,14 +45,58 @@
             Title.TabIndex = 2;
             Title.Text = "Plants";
             // 
+            // lblGuessed
+            // 
+            lblGuessed.AutoSize = true;
+            lblGuessed.Font = new Font("Segoe UI", 12F);
+            lblGuessed.Location = new Point(495, 208);
+            lblGuessed.Name = "lblGuessed";
+            lblGuessed.Size = new Size(65, 28);
+            lblGuessed.TabIndex = 10;
+            lblGuessed.Text = "label1";
+            // 
+            // lblCounter
+            // 
+            lblCounter.AutoSize = true;
+            lblCounter.CausesValidation = false;
+            lblCounter.Font = new Font("Segoe UI", 12F);
+            lblCounter.Location = new Point(315, 288);
+            lblCounter.Name = "lblCounter";
+            lblCounter.Size = new Size(65, 28);
+            lblCounter.TabIndex = 9;
+            lblCounter.Text = "label1";
+            // 
+            // lblWord
+            // 
+            lblWord.AutoSize = true;
+            lblWord.Font = new Font("Segoe UI", 12F);
+            lblWord.Location = new Point(315, 135);
+            lblWord.Name = "lblWord";
+            lblWord.Size = new Size(65, 28);
+            lblWord.TabIndex = 8;
+            lblWord.Text = "label1";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(241, 198);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(215, 43);
+            textBox1.TabIndex = 7;
+            // 
             // Plants
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblGuessed);
+            Controls.Add(lblCounter);
+            Controls.Add(lblWord);
+            Controls.Add(textBox1);
             Controls.Add(Title);
             Name = "Plants";
             Text = "Plants";
+            KeyPress += KeyIsPressed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -56,5 +104,9 @@
         #endregion
 
         private Label Title;
+        private Label lblGuessed;
+        private Label lblCounter;
+        private Label lblWord;
+        private TextBox textBox1;
     }
 }
