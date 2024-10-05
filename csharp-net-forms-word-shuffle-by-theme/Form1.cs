@@ -1,8 +1,8 @@
 namespace csharp_net_forms_word_shuffle_by_theme
 {
-    public partial class Form1 : Form
+    public partial class Themes : Form
     {
-        public Form1()
+        public Themes()
         {
             InitializeComponent();
         }
