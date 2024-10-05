@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Body";
+            Title = new Label();
+            SuspendLayout();
+            // 
+            // Title
+            // 
+            Title.AutoSize = true;
+            Title.Font = new Font("Segoe UI", 20F);
+            Title.Location = new Point(345, 9);
+            Title.Name = "Title";
+            Title.Size = new Size(95, 46);
+            Title.TabIndex = 2;
+            Title.Text = "Body";
+            // 
+            // Body
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Title);
+            Name = "Body";
+            Text = "Body";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label Title;
     }
 }
